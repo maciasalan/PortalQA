@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MCAP - 2025 - Febrero</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      height: 100vh;
+    }
+
+    .sidebar {
+      width: 250px;
+      background-color: #2c3e50;
+      color: white;
+      padding: 40px 20px 20px 20px;
+      overflow-y: auto;
+    }
+
+    .sidebar h2 {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .sidebar a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      margin: 20px 0;
+    }
+
+    .sidebar a:hover {
+      background-color: #34495e;
+      padding-left: 5px;
+    }
+
+    .submenu {
+      margin-left: 10px;
+      padding-left: 10px;
+      border-left: 2px solid #34495e;
+    }
+
+    .submenu a {
+      font-size: 14px;
+      margin: 5px 0;
+      display: block;
+      color: #ecf0f1;
+    }
+
+    .main-content {
+      flex: 1;
+      padding: 40px;
+    }
+
+    .logout-button {
+      margin-top: 40px;
+      padding: 10px 20px;
+      background-color: #e74c3c;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .logout-button:hover {
+      background-color: #c0392b;
+    }
+
+    details summary {
+      cursor: pointer;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    .year-group {
+      margin-left: 10px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Panel de Navegación</h2>
+
+    <!-- MCAP -->
+    <details>
+      <summary>MCAP</summary>
+      <details class="year-group">
+        <summary>2025</summary>
+        <div class="submenu">
+          <a href="MCAP/2025/mcap-01-enero.html">Enero</a>
+          <a href="MCAP/2025/mcap-02-febrero.html">Febrero</a>
+          <a href="MCAP/2025/mcap-03-marzo.html">Marzo</a>
+          <a href="MCAP/2025/mcap-04-abril.html">Abril</a>
+          <a href="MCAP/2025/mcap-05-mayo.html">Mayo</a>
+          <a href="MCAP/2025/mcap-06-junio.html">Junio</a>
+          <a href="MCAP/2025/mcap-07-julio.html">Julio</a>
+          <a href="MCAP/2025/mcap-08-agosto.html">Agosto</a>
+          <a href="MCAP/2025/mcap-09-septiembre.html">Septiembre</a>
+          <a href="MCAP/2025/mcap-10-octubre.html">Octubre</a>
+          <a href="MCAP/2025/mcap-11-noviembre.html">Noviembre</a>
+          <a href="MCAP/2025/mcap-12-diciembre.html">Diciembre</a>
+        </div>
+      </details>
+    </details>
+    <!-- VICAP -->
+    <details>
+      <summary>VICAP</summary>
+      <details class="year-group">
+        <summary>2025</summary>
+        <div class="submenu">
+          <a href="vicap-2025-enero.html">2025-Enero</a>
+          <a href="vicap-2025-febrero.html">2025-Febrero</a>
+          <a href="vicap-2025-marzo.html">2025-Marzo</a>
+          <a href="vicap-2025-abril.html">2025-Abril</a>
+          <a href="vicap-2025-mayo.html">2025-Mayo</a>
+          <a href="vicap-2025-junio.html">2025-Junio</a>
+        </div>
+      </details>     
+    </details>
+
+    <!-- MULTICAP -->
+    <details>
+      <summary>MULTICAP</summary>
+
+      <details class="year-group">
+        <summary>2025</summary>
+        <div class="submenu">
+          <a href="multicap-2025-enero.html">2025-Enero</a>
+          <a href="multicap-2025-febrero.html">2025-Febrero</a>
+          <a href="multicap-2025-marzo.html">2025-Marzo</a>
+          <a href="multicap-2025-abril.html">2025-Abril</a>
+          <a href="multicap-2025-mayo.html">2025-Mayo</a>
+          <a href="multicap-2025-junio.html">2025-Junio</a>
+        </div>
+      </details>
+
+          </details>
+
+    <!-- PORTAL OPERATIVO -->
+    <details>
+      <summary>PORTAL OPERATIVO</summary>
+
+      <details class="year-group">
+        <summary>2025</summary>
+        <div class="submenu">
+          <a href="portal-2025-enero.html">2025-Enero</a>
+          <a href="portal-2025-febrero.html">2025-Febrero</a>
+          <a href="portal-2025-marzo.html">2025-Marzo</a>
+          <a href="portal-2025-abril.html">2025-Abril</a>
+          <a href="portal-2025-mayo.html">2025-Mayo</a>
+          <a href="portal-2025-junio.html">2025-Junio</a>
+        </div>
+      </details>
+    </details>
+
+    <button class="logout-button" onclick="cerrarSesion()">Cerrar sesión</button>
+  </div>
+
+  <div class="main-content">
+    <h1>Revision de Evidencias MCAP Febrero 2025</h1>
+    <p>Dentro de esta pagina se muestran los requerimientos trabajados durante el mes de Febrero 2025</p>
+  </div>
+
+  <script>
+    const loggedIn = localStorage.getItem("logueado");
+    if (!loggedIn) {
+      window.location.href = "login.html";
+    }
+
+    function cerrarSesion() {
+      localStorage.removeItem("logueado");
+      window.location.href = "login.html";
+    }
+  </script>
+</body>
+</html>
