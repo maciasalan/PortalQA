@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estadisticas</title> <!--Esto es el titulo de la pagina-->
+    <style>
+        #capa1 {
+            color: blue
+        }
+
+        /*Agrego los radio button en un container*/
+        .radiobutton-container {
+            background-color: rgb(235, 232, 53);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            text-align: left;
+        }
+
+        .radiobutton-container h1 {
+            margin-bottom: 30px;
+            font-size: 22px;
+            color: #2c3e50;
+        }
+
+        /*Agrego al boton Enviar en el centro del container*/
+        .boton-centro {
+            display: block;
+            margin: 20px auto 0 auto;
+            /* arriba: 20px, laterales: auto, abajo: 0 */
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .boton-centro:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+
+<body><!--h* son titulos donde va de lo mas grande a mas chico-->
+    <h1>Este es H1</h1>
+    <h2>Este es H2</h2>
+    <h3>Este es H3</h3>
+    <h4>Este es H4</h4>
+    <h5>Este es H5</h5>
+    <h6>Este es H6</h6>
+    <!--Esto es un parrafo con letra negrita-->
+    <p>Este es un párrafo de ejemplo para mostrar la palabra en <b>negrita</b> en HTML.</p>
+    <!--Esto es un parrafo con letra cursiva-->
+    <p>Otro párrafo para demostrar la palabra en <i>cursiva</i></p>
+    <p>Ejemplo de una lista Ordenada</p>
+    <ol> <!--Esto es una lista ordenada -->
+        <li>Primer elemento de lista ordenada</li>
+        <li>Segundo elemento de lista ordenada</li>
+        <li>Tercer elemento de lista ordenada</li>
+        <li>Cuarto elemento de lista ordenada</li>
+        <li>Quinto elemento de lista ordenada</li>
+    </ol>
+    <p>Ejemplo de una lista NO Ordenada</p>
+    <ul><!--Esto es una lista no ordenada donde se le agregan viñetas-->
+        <li>Elemento de lista 1</li>
+        <li>Elemento de lista 2</li>
+        <li>Elemento de lista 3</li>
+    </ul>
+    <p>Ejemplo de una combinacion de <span style="color: red;">listas</span> </p>
+    <ol>
+        <li>Colores</li>
+        <ul><!--Esto es una lista no ordenada dentro de una lista ordenada-->
+            <li>Azul</li>
+            <li>Amarillo</li>
+        </ul>
+        <li>Frutas</li>
+        <ul>
+            <li>Manzana</li>
+            <li>Banana</li>
+        </ul>
+    </ol>
+    <div id="capa1">
+        <h1>Titular de color azul</h1>
+        <p>Parrafo en color azul</p>
+    </div>
+    <!--Imagenes y enlaces-->
+    <p>Prueba de <b>imagen:</b></p>
+    <img src="imagenes/estadisticas.jpg" alt="Imagen de trabajo en equipo" width="200" height="200">
+    <!--Esto es una imagen con un ancho y alto especifico-->
+    <p></p>
+    <a href="login.html" target="_self">Ir a login</a> <!--Esto es un enlace que se abre en una nueva pestaña-->
+    <p></p>
+    <p>A traves de la siguiente imagen puede volver a la pagina principal</p>
+    <a href="index.html" target="_blank">
+        <img src="imagenes/estadisticas.jpg" alt="Imagen de trabajo en equipo" width="200" height="200">
+    </a>
+    <h3>Tablas</h3>
+    <table border="1"> <!--Defino la tabla y le agrego un ancho de borde-->
+        <tr><!--con tr agregamos una nueva fila-->
+            <!--Columnas de la tabla-->
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>Ciudad</th>
+        </tr>
+        <tr>
+            <td>Ana</td><!--regsitro-->
+            <td>25</td><!--regsitro-->
+            <td>Madrid</td><!--regsitro-->
+        </tr>
+        <tr>
+            <td>Juan</td><!--regsitro-->
+            <td>30</td><!--regsitro-->
+            <td>Barcelona</td><!--regsitro-->
+        </tr>
+    </table>
+    <!--Formulario-->
+    <form class="" action="resultado.html" method="post">
+        <h3>Introduce nombre y apellido</h3>
+        <input type="text" name="nombre" placeholder="Nombre" required>
+        <input type="text" name="apellido" placeholder="Apellido" required>
+        <button type="submit">Enviar</button>
+        <p>Al enviar el formulario, los datos se procesarán en el servidor.</p>
+    </form>
+    <!--Radio Button-->
+    <div class="radiobutton-container">
+        <form class="" action="resultado.html" method="post">
+            <h3>Selecciona tu género</h3>
+            <label>
+                <input type="radio" name="genero" value="masculino" required> Masculino
+            </label>
+            <p></p>
+            <label>
+                <input type="radio" name="genero" value="femenino"> Femenino
+            </label>
+            <p></p>
+            <label>
+                <input type="radio" name="genero" value="otro"> Otro
+            </label>
+            <p></p>
+            <button type="submit" class="boton-centro">Enviar</button>
+        </form>
+    </div>
+    <!--Seleccion de valores-->
+    <form class="" action="resultado.html" method="post">
+        <h3>Selecciona tu color favorito</h3>
+        <select name="color" required>
+            <option value="rojo">Rojo</option>
+            <option value="azul">Azul</option>
+            <option value="verde">Verde</option>
+            <option value="amarillo">Amarillo</option>
+        </select>
+        <p></p>
+        <button type="submit">Enviar</button>
+    </form>
+    <!--Area de texto-->
+    <form class="" action="resultado.html" method="post">
+        <h3>Deja un comentario</h3>
+        <textarea name="comentario" rows="4" cols="50" placeholder="Escribe tu comentario aquí..." required></textarea>
+        <p></p>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+
+</html>

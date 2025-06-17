@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8" /> /*acepta caracteres especiales*/
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Revision de Evidencias</title>
   <style>
@@ -72,7 +73,7 @@
     details summary {
       cursor: pointer;
       font-weight: bold;
-      margin-top: 20px;
+      margin-top: 30px;
     }
 
     .year-group {
@@ -81,10 +82,17 @@
     }
   </style>
 </head>
+
 <body>
   <div class="sidebar">
     <h2>Panel de Navegación</h2>
-
+<!-- Estadisticas-->
+    <details>
+      <!-- onclick para redirigir a otra pagina y todo dentro del summary para mantener las caracteristicas definidas arriba-->
+      <summary onclick="window.location.href='estadisticas.html'" >Estadísticas
+      </summary>
+    </details>
+ 
     <!-- MCAP -->
     <details>
       <summary>MCAP</summary>
@@ -119,7 +127,7 @@
           <a href="vicap-2025-mayo.html">2025-Mayo</a>
           <a href="vicap-2025-junio.html">2025-Junio</a>
         </div>
-      </details>     
+      </details>
     </details>
 
     <!-- MULTICAP -->
@@ -138,7 +146,7 @@
         </div>
       </details>
 
-          </details>
+    </details>
 
     <!-- PORTAL OPERATIVO -->
     <details>
@@ -177,4 +185,5 @@
     }
   </script>
 </body>
+
 </html>
