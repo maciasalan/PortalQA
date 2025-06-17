@@ -1,0 +1,9 @@
+@echo off
+cd /d %~dp0
+echo Agregando cambios...
+git add .
+echo Commiting...
+git commit -m "Actualización rápida"
+echo Pushing a GitHub...
+git push origin main
+pause
