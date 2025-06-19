@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de registro</title>
+</head>
+
+<body>
+    <h1>Formulario de Registro</h1>
+    <p>Por favor, complete el siguiente formulario para registrarse:</p>
+    <form action="resultado.html" method="post">
+        Nombre:<input type="text" placeholder="nombre" required><br></br>
+        Apellido:<input type="text" placeholder="apellido"required><br></br>
+        Email:<input type="email" placeholder="correo" required><br></br>
+        Password:<input type="password" placeholder="password" required><br></br> 
+        <p>Sos mayor de edad?</p>
+        Si<input type="radio" name="mayorEdad" value="si" required>
+        No<input type="radio" name="mayorEdad" value="no">
+        <p>Selecciona el pais de origen</p>
+        <select name="pais" required>
+            <option value="argentina">Argentina</option>
+            <option value="chile">Chile</option>
+            <option value="colombia">Colombia</option>
+            <option value="mexico">México</option>
+            <option value="peru">Perú</option>
+        </select>
+        <br></br> <!--Salto de linea-->
+        <p>Selecciona el color de fondo</p>
+        <input type="color" name="colorFondo" value="" required> <!--Seleccion de fondo-->
+        <br></br>
+        <button type="submit">Registrarse</button>
+    </form>
+</body>
+</html>

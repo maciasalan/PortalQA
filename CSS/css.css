@@ -1,0 +1,68 @@
+/*Esto es un fichero de estilos CSS que se aplica a la página web*/
+h2 {
+    color: rgb(8, 241, 98);
+    font-size: 24px;
+}
+p1 {
+    color: rgba(211, 8, 143, 0.781);
+    font-size: 16px;
+    font:bolder
+}
+/* capa1 {
+    background-color: rgb(25, 0, 255);
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+} */
+body {
+    background-color: rgb(75, 83, 82); /*cambia el color de fondo de la página*/
+    /*background: url("../imagenes/avengers.jpg"); /*cambia la imagen de fondo de la página*/
+    /*background: cover; /*hace que la imagen de fondo cubra toda la página*/
+    background-position: center; /*centra la imagen de fondo*/ 
+    background-repeat: no-repeat; /*evita que la imagen de fondo se repita*/
+
+    color: rgba(2, 9, 15, 0.795); /*cambia el color del texto de la página*/
+    font-family: Arial, sans-serif; /*cambia la fuente del texto de la página*/
+    margin: 40; /*elimina el margen por defecto del body*/   
+}
+/* div{
+    background-color: rgb(235, 207, 86); /*cambia el color de fondo de los divs*/
+    padding: 20px; /*añade un espacio interior a los divs*/
+    border-radius: 10px; /*redondea las esquinas de los divs*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /*añade una sombra sutil a los divs*/
+    border-color: darkblue; /*cambia el color del borde de los divs*/
+    border-width: 12px; /*cambia el grosor del borde de los divs*/
+    border-style: solid; /*cambia el estilo del borde de los divs*/
+} */
+span{
+    background-color: blueviolet;
+    color: rgba(16, 9, 121, 0.658); /*cambia el color del texto de los span*/
+    font-weight: bold; /*pone el texto de los span en negrita*/
+    font-size: 18px; /*cambia el tamaño del texto de los span*/
+    border-color: rgb(9, 204, 51); /*cambia el color del borde de los span*/
+    border-width: 2px; /*cambia el grosor del borde de los span*/
+    border-style:dotted; /*cambia el estilo del borde de los span*/
+} */
+h1{
+    background-color: aqua; /*cambia el color de fondo del h1*/
+    color: blueviolet; /*cambia el color del texto del h1*/
+    text-align: center; /*centra el texto del h1*/
+}
+body ol{ /*cambia el color del texto de las listas ordenadas*/
+    color: rgb(207, 11, 11); 
+}
+.capa1{
+    color: rgb(219, 219, 219);
+}
+.capa2 { /*al ser tipo class se pone un punto antes del nombre*/
+    color:rgb(203, 248, 3)  
+}
+/*Capa3 toma el color definido en la etiqueta body*/
+.capa3 {
+    color: inherit; /*hereda el color del body*/
+}
+#parrafo1{
+    color:cadetblue;
+    font-size: 20px;
+    font-weight: bold;
+}
