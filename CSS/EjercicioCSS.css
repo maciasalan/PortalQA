@@ -1,0 +1,18 @@
+h1{
+    text-align: center; /*centra el texto del h1*/
+    color: rgb(7, 9, 121); /*cambia el color del texto*/
+    text-decoration: underline; /*subraya el texto*/
+    font-size: 36px; /*cambia el tamaño del texto*/
+    font-weight: bold; /*pone el texto en negrita*/
+}
+td{
+    background-color: rgb(245, 242, 103);
+    height: 200px;  ;
+    width: 200px;
+}
+table{
+    margin:auto; /*centra la tabla en la página*/
+}
+.dato{
+    background-color: blue; /*cambia el color de fondo de las celdas con la clase dato*/;
+}

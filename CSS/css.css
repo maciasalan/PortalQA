@@ -51,18 +51,65 @@ h1{
 body ol{ /*cambia el color del texto de las listas ordenadas*/
     color: rgb(207, 11, 11); 
 }
-.capa1{
+.capa1{ /*al ser tipo class se pone un punto antes del nombre*/
     color: rgb(219, 219, 219);
 }
 .capa2 { /*al ser tipo class se pone un punto antes del nombre*/
     color:rgb(203, 248, 3)  
 }
 /*Capa3 toma el color definido en la etiqueta body*/
-.capa3 {
+.capa3 { /*al ser tipo class se pone un punto antes del nombre*/
     color: inherit; /*hereda el color del body*/
-}
+    border: 2px solid black; /*cambia el color del borde de los divs*/
+    border-width: 2px; /*cambia el grosor del borde de los divs*/
+    border-style: solid; /*cambia el estilo del borde de los divs, puede ser con lineas de puntos (dotted) o unificado como esta (solid).*/
+} 
 #parrafo1{
     color:cadetblue;
     font-size: 20px;
     font-weight: bold;
+    background-color:burlywood; /*cambia el color de fondo del parrafo1*/
+}
+div{
+   /* border: 12px solidrgb(150, 4, 94)k; /*cambia el color del borde de los divs*/
+    border-width: 20px; /*cambia el grosor del borde de los divs*/
+    border-style: solid; /*cambia el estilo del borde de los divs*/
+    border-color: solid; /*cambia el color del borde de los divs, si dejo el solid le deja el color que tiene la capa, sino marco el color que quiera*/
+}
+.capacitacion{
+    background-color: rgb(245, 229, 5); /*cambia el color de fondo del div con id capacitacion*/
+    color: rgb(140, 116, 197); /*cambia el color del texto del div con id capacitacion*/
+    padding: 20px; /*añade un espacio interior al div con id capacitacion*/
+    border-radius: 10px; /*redondea las esquinas del div con id capacitacion*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /*añade una sombra sutil al div con id capacitacion*/
+    font-weight: bolder; /*pone el texto del div con id capacitacion en negrita*/
+}
+.titulo{
+    text-decoration: underline; /*subraya el texto del div con id titulo*/
+    font-size: 24px; /*cambia el tamaño del texto del div con id titulo*/
+    color: rgb(209, 51, 130); /*cambia el color del texto del div con id titulo*/
+    font-weight: bolder; /*pone el texto del div con id titulo en negrita*/
+    text-align: center; /*centra el texto del div con id titulo*/
+    text-transform: uppercase; /*pone el texto del div con id titulo en mayúsculas*/
+}
+.seccion1{
+    border: 5px solid red; /*cambia el color del borde de la sección 1*/
+    padding: 5px; /*añade un espacio interior a la sección 1*/
+    padding-top: 20px; /*añade un espacio interior superior a la sección 1*/
+    padding-bottom: 20px; /*añade un espacio interior inferior a la sección
+    margin: 5px; /*añade un margen exterior a la sección 1*/
+    margin-top: 30px; /*añade un margen superior a la sección 1*/
+    margin-bottom: 50px; /*añade un margen inferior a la sección 1*/
+    background-color: rgb(255, 204, 204); /*cambia el color de fondo de la sección 1*/
+    font-weight: bold; /*pone el texto de la sección 1 en negrita*/
+    width: auto; /*hace que la sección 1 ocupe el ancho del contenido*/
+    text-align: center;
+}
+
+.seccion2{
+    border: 8px dotted blue;
+    color:aqua;
+    width: auto; /*hace que la sección 2 ocupe el 50% del ancho del contenedor*/
+    text-align: right; /*alinea el texto de la sección 2 a la derecha*/
+    padding-right: 20px; /*añade un espacio interior a la derecha de la sección 2*/
 }

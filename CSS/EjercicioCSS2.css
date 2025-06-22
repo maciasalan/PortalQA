@@ -1,0 +1,28 @@
+h1{
+    padding-left: 10px; /*añade un espacio interior al h1*/
+    text-align: left; /*centra el texto del h1*/
+    color:blue;
+    font-weight: bold; /*pone el texto en negrita*/
+    font-size: 36px; /*cambia el tamaño del texto*/ 
+}
+.mayorEdad{
+    text-align: center;  /*centra el texto de la clase mayorEdad*/
+}
+body{
+    text-align: center; /*centra el texto del body*/
+    background-color: aqua; /*cambia el color de fondo del body*/
+    border: 10px blue solid; /*cambia el color del borde del body*/
+    border-radius: 10px; /*redondea las esquinas del body*/
+    padding-bottom: 20px; /*añade un espacio interior al body*/
+    padding-left: auto; /*añade un espacio interior al body*/
+    font-family: Arial, sans-serif; /*cambia la fuente del texto del body*/
+}
+#boton{
+    background-color: rgb(245, 229, 5); /*cambia el color de fondo del botón submit*/
+    color: rgb(140, 116, 197); /*cambia el color del texto del botón submit*/
+    padding: 10px; /*añade un espacio interior al botón submit*/
+    border-radius: 5px; /*redondea las esquinas del botón submit*/
+    border: 2px solid blue; /*cambia el color del borde del botón submit*/
+    font-weight: bolder; /*pone el texto del botón submit en negrita*/
+    cursor: pointer; /*cambia el cursor al pasar por encima del botón submit*/
+}

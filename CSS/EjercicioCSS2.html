@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de alta de usuario</title>
+    <link rel="stylesheet" href="EjercicioCSS2.css">
+</head>
+
+<body>
+    <h1>Formulario de alta de usuario</h1>
+    <h3>Complete los campos requeridos</h3>
+    <p>Por favor, complete el siguiente formulario para crear su cuenta.</p>
+    <form action="respuesta.html" method="post">
+        Nombre:<br></br>
+        <input type="text" placeholder="nombre" required>
+        <br></br>
+        Apellido:<br></br>
+        <input type="text" placeholder="apellido" required> 
+        <br></br>
+        Email:<br></br>
+        <input type="email" placeholder="correo" required> 
+        <br></br>
+        Password:<br></br>
+        <input type="password" placeholder="password" required> 
+        <br></br>
+        <p>Sos mayor de edad?</p>
+        <div class ="mayorEdad">
+            <!-- Agrupamos los botones de radio -->
+        Si<input type="radio" name="mayorEdad" value="si" required >
+        No<input type="radio" name="mayorEdad" value="no">
+        </div>
+        <p>Selecciona el pais de origen</p>
+        <select name="pais" required>
+            <option value="argentina">Argentina</option>
+            <option value="chile">Chile</option>
+            <option value="colombia">Colombia</option>
+            <option value="mexico">México</option>
+            <option value="peru">Perú</option>
+        </select>
+        <br></br> <!--Salto de linea-->
+        <p>Selecciona el color de fondo</p>
+        <input type="color" name="colorFondo" value="" required> <!--Seleccion de fondo-->
+        <br></br>
+        <button id="boton" type="submit">Registrarse</button>
+    </form>
+</body>
+
+</html>

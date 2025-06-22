@@ -1,0 +1,14 @@
+h1, p{
+    text-align: center; /*centra el texto del h1*/
+    color:blue;
+    /*font-weight: bold; /*pone el texto en negrita*/
+    font-size: 40px; /*cambia el tamaño del texto*/ 
+}
+.header{
+    background-color: rgb(245, 229, 5); /*cambia el color de fondo del header*/
+    padding: 120px; /*añade un espacio interior al header*/
+    border: 10px blue solid; /*cambia el color del borde del header*/;
+    border-radius: 10px; /*redondea las esquinas del header*/
+        font-family: Arial, sans-serif; /*cambia la fuente del texto del body*/
+    /*font-weight: bolder; /*pone el texto del header en negrita*/
+}
