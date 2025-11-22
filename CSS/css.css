@@ -25,7 +25,7 @@ body {
     font-family: Arial, sans-serif; /*cambia la fuente del texto de la página*/
     margin: 40; /*elimina el margen por defecto del body*/   
 }
-/* div{
+div{
     background-color: rgb(235, 207, 86); /*cambia el color de fondo de los divs*/
     padding: 20px; /*añade un espacio interior a los divs*/
     border-radius: 10px; /*redondea las esquinas de los divs*/
